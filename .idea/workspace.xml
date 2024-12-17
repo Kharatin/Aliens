@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="add alienss">
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="add window">
+      <change afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
     </list>
@@ -31,6 +32,7 @@
     "Python.main.executor": "Run",
     "Python.p.executor": "Run",
     "Python.rrr.executor": "Run",
+    "Python.settings.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/PYTHON works/PROJECTS/Aliens",
@@ -106,14 +108,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734448145803</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add window">
+      <option name="closed" value="true" />
+      <created>1734450862511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734450862511</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add alien" />
     <MESSAGE value="add aliens" />
     <MESSAGE value="add alienss" />
-    <option name="LAST_COMMIT_MESSAGE" value="add alienss" />
+    <MESSAGE value="add window" />
+    <option name="LAST_COMMIT_MESSAGE" value="add window" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
