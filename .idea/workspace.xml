@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="we have a ship">
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="moving ship">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734457499572</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="moving ship">
+      <option name="closed" value="true" />
+      <created>1734546315361</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734546315361</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,7 +152,8 @@
     <MESSAGE value="add window" />
     <MESSAGE value="color's window is change" />
     <MESSAGE value="we have a ship" />
-    <option name="LAST_COMMIT_MESSAGE" value="we have a ship" />
+    <MESSAGE value="moving ship" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving ship" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
