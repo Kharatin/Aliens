@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment=" moving and full screen">
-      <change afterPath="$PROJECT_DIR$/bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="we can fire">
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
@@ -151,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734548003056</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="we can fire">
+      <option name="closed" value="true" />
+      <created>1734550996910</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734550996910</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,7 +169,8 @@
     <MESSAGE value="we have a ship" />
     <MESSAGE value="moving ship" />
     <MESSAGE value=" moving and full screen" />
-    <option name="LAST_COMMIT_MESSAGE" value=" moving and full screen" />
+    <MESSAGE value="we can fire" />
+    <option name="LAST_COMMIT_MESSAGE" value="we can fire" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
