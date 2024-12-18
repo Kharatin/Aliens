@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="moving ship">
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment=" moving and full screen">
+      <change afterPath="$PROJECT_DIR$/bullet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.alien_invasion.executor": "Run",
+    "Python.bullet.executor": "Run",
     "Python.main.executor": "Run",
     "Python.p.executor": "Run",
     "Python.rrr.executor": "Run",
@@ -142,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734546315361</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" moving and full screen">
+      <option name="closed" value="true" />
+      <created>1734548003056</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734548003056</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,7 +162,8 @@
     <MESSAGE value="color's window is change" />
     <MESSAGE value="we have a ship" />
     <MESSAGE value="moving ship" />
-    <option name="LAST_COMMIT_MESSAGE" value="moving ship" />
+    <MESSAGE value=" moving and full screen" />
+    <option name="LAST_COMMIT_MESSAGE" value=" moving and full screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
