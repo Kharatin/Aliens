@@ -1,8 +1,10 @@
 import sys
+from time import sleep
 
 import  pygame
 
 from settings import Settings
+from game_stats import GameStats
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
@@ -21,6 +23,9 @@ class AlienInvasion:
         self.settings.screen_height = self.screen.get_rect().height
         pygame.display.set_caption("Alien Invasion")
 
+        # Создать экземпляр для сохранения игровой статистики
+        self.stats = GameStats(self)
+
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
         self.aliens = pygame.sprite.Group()
@@ -30,10 +35,32 @@ class AlienInvasion:
         """ Начять главный цикл игры. """
         while True:
             self._check_events()
-            self.ship.update()
-            self._update_bullets()
-            self._update_aliens()
+            if self.stats.game_active:
+                self.ship.update()
+                self._update_bullets()
+                self._update_aliens()
+
             self._update_screen()
+
+    def _ship_hit(self):
+        """ Реагировать на столкновение пришельца с ккораблём. """
+        if self.stats.ship_left > 0:
+            # Уменьшить ships_left.
+            self.stats.ship_left -= 1
+
+            # Избавится от лишних кораблей и пуль.
+            self.aliens.empty()
+            self.bullets.empty()
+
+            # Создать новый флот и вернуть корабль на стартовую позицыю.
+            self._create_fleet()
+            self.ship.center_ship()
+
+            # Пауза.
+            sleep(0.5)
+        else:
+            self.stats.game_active = False
+
     def _update_bullets(self):
         """ Обновить позицию пули и избавится от старых пуль. """
         # Обновить позиции пуль.
@@ -44,15 +71,30 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
-        # Проверить есть ли поодание.
-        # Если попал удалить пулю и пришельца.
+        self._check_bullet_alien_collisions()
+
+    def _check_bullet_alien_collisions(self):
+        """ Реакция на столкновение пуль с пришельцами. """
+        # Удалить все пули и пришельцев которые столкнулись.
         collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
+
+        if not self.aliens:
+            # Удалить пули и создать новый флот.
+            self.bullets.empty()
+            self._create_fleet()
 
     def _update_aliens(self):
         """ Проверить находится ли флот на краю.
          Обновить позиции пришельцев. """
         self._check_fleet_edges()
         self.aliens.update()
+
+        # Искать столкновение корабля с пришельцем.
+        if pygame.sprite.spritecollideany(self.ship, self.aliens):
+            self._ship_hit()
+
+        # Искать может кто из пришельцев достиг нижнего края экрана.
+        self._check_aliens_buttom()
 
     def _check_events(self):
         """ Реагировать на нажатие клавиш и движение мыши. """
@@ -63,6 +105,15 @@ class AlienInvasion:
                 self._check_keydown_events(event)
             elif event.type == pygame.KEYUP:
                 self._check_keyup_events(event)
+
+    def _check_aliens_buttom(self):
+        """ Проверить не достиг ли кто-то низа экрана. """
+        screen_rect = self.screen.get_rect()
+        for alien in self.aliens.sprites():
+            if alien.rect.bottom >= screen_rect.bottom:
+                # Среагировать так как будто был подбит карабль.
+                self._ship_hit()
+                break
 
     def _check_keydown_events(self, event):
         """ Реагировать на нажатие клавиши. """
