@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="we can fire">
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="we can fire three bullets">
+      <change afterPath="$PROJECT_DIR$/alien.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734550996910</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="we can fire three bullets">
+      <option name="closed" value="true" />
+      <created>1734551846547</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734551846547</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,7 +179,8 @@
     <MESSAGE value="moving ship" />
     <MESSAGE value=" moving and full screen" />
     <MESSAGE value="we can fire" />
-    <option name="LAST_COMMIT_MESSAGE" value="we can fire" />
+    <MESSAGE value="we can fire three bullets" />
+    <option name="LAST_COMMIT_MESSAGE" value="we can fire three bullets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
