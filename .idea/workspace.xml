@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="we can fire three bullets">
-      <change afterPath="$PROJECT_DIR$/alien.py" afterDir="false" />
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="first alien">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
     </list>
@@ -166,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734551846547</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="first alien">
+      <option name="closed" value="true" />
+      <created>1734624772927</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734624772927</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,7 +187,8 @@
     <MESSAGE value=" moving and full screen" />
     <MESSAGE value="we can fire" />
     <MESSAGE value="we can fire three bullets" />
-    <option name="LAST_COMMIT_MESSAGE" value="we can fire three bullets" />
+    <MESSAGE value="first alien" />
+    <option name="LAST_COMMIT_MESSAGE" value="first alien" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
