@@ -5,6 +5,7 @@ import  pygame
 
 from settings import Settings
 from game_stats import GameStats
+from button import Button
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
@@ -31,6 +32,9 @@ class AlienInvasion:
         self.aliens = pygame.sprite.Group()
 
         self._create_fleet()
+
+        # Создать кнопку Play.
+        self.play_button = Button(self, "Play")
     def run_game(self):
         """ Начять главный цикл игры. """
         while True:
@@ -60,6 +64,7 @@ class AlienInvasion:
             sleep(0.5)
         else:
             self.stats.game_active = False
+            pygame.mouse.set_visible(True)
 
     def _update_bullets(self):
         """ Обновить позицию пули и избавится от старых пуль. """
@@ -105,6 +110,29 @@ class AlienInvasion:
                 self._check_keydown_events(event)
             elif event.type == pygame.KEYUP:
                 self._check_keyup_events(event)
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                mouse_pos = pygame.mouse.get_pos()
+                self._check_play_button(mouse_pos)
+
+    def _check_play_button(self, mouse_pos):
+        """ Начять новую игру когда пользователь нажмёт на кнопку Play. """
+        button_clicked = self.play_button.rect.collidepoint(mouse_pos)
+        if button_clicked and not self.stats.game_active:
+            # Анулировать игровую статистику.
+            self.stats.reset_stats()
+            self.stats.game_active = True
+
+            # Удалить излишки пуль и пришельцев.
+            self.aliens.empty()
+            self.bullets.empty()
+
+            # Создать новый флот и вернуть корабль на стартовую позицию.
+            self._create_fleet()
+            self.ship.center_ship()
+
+            # Спрятать курсор мыши.
+            pygame.mouse.set_visible(False)
+
 
     def _check_aliens_buttom(self):
         """ Проверить не достиг ли кто-то низа экрана. """
@@ -193,6 +221,10 @@ class AlienInvasion:
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
         self.aliens.draw(self.screen)
+
+        # Нарисовать кнопку Play если игра не активна.
+        if not self.stats.game_active:
+            self.play_button.draw_button()
 
         # показать последний нарисованный экран
         pygame.display.flip()

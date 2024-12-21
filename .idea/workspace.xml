@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="moves and disappear">
-      <change afterPath="$PROJECT_DIR$/game_stats.py" afterDir="false" />
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="no statistic">
+      <change afterPath="$PROJECT_DIR$/button.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_stats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +31,7 @@
   "keyToString": {
     "Python.alien_invasion.executor": "Run",
     "Python.bullet.executor": "Run",
+    "Python.game_stats.executor": "Run",
     "Python.main.executor": "Run",
     "Python.p.executor": "Run",
     "Python.rrr.executor": "Run",
@@ -192,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734629433563</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="no statistic">
+      <option name="closed" value="true" />
+      <created>1734633020499</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734633020499</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,7 +217,8 @@
     <MESSAGE value="first alien" />
     <MESSAGE value="created row" />
     <MESSAGE value="moves and disappear" />
-    <option name="LAST_COMMIT_MESSAGE" value="moves and disappear" />
+    <MESSAGE value="no statistic" />
+    <option name="LAST_COMMIT_MESSAGE" value="no statistic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
