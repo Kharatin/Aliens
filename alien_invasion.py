@@ -5,6 +5,7 @@ import  pygame
 
 from settings import Settings
 from game_stats import GameStats
+from scoreboard import Scoreboard
 from button import Button
 from ship import Ship
 from bullet import Bullet
@@ -22,10 +23,11 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
-        pygame.display.set_caption("Alien Invasion")
+        pygame.display.set_caption("AlienInvasion")
 
         # Создать экземпляр для сохранения игровой статистики
         self.stats = GameStats(self)
+        self.sb = Scoreboard(self)
 
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
@@ -87,6 +89,7 @@ class AlienInvasion:
             # Удалить пули и создать новый флот.
             self.bullets.empty()
             self._create_fleet()
+            self.settings.increase_speed()
 
     def _update_aliens(self):
         """ Проверить находится ли флот на краю.
@@ -119,8 +122,10 @@ class AlienInvasion:
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
         if button_clicked and not self.stats.game_active:
             # Анулировать игровую статистику.
+            self.settings.initialize_dynamic_settings()
             self.stats.reset_stats()
             self.stats.game_active = True
+
 
             # Удалить излишки пуль и пришельцев.
             self.aliens.empty()
@@ -221,6 +226,9 @@ class AlienInvasion:
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
         self.aliens.draw(self.screen)
+
+        #исовать информайию о счёте.
+        self.sb.show_score()
 
         # Нарисовать кнопку Play если игра не активна.
         if not self.stats.game_active:

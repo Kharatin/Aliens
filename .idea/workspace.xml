@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="no statistic">
-      <change afterPath="$PROJECT_DIR$/button.py" afterDir="false" />
+    <list default="true" id="4c1511d6-b3e8-4a45-b8c7-ae883692aac2" name="Changes" comment="button Play working">
+      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
     "Python.main.executor": "Run",
     "Python.p.executor": "Run",
     "Python.rrr.executor": "Run",
+    "Python.scoreboard.executor": "Run",
     "Python.settings.executor": "Run",
     "Python.ship.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -200,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734633020499</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="button Play working">
+      <option name="closed" value="true" />
+      <created>1734787683391</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734787683391</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,7 +228,8 @@
     <MESSAGE value="created row" />
     <MESSAGE value="moves and disappear" />
     <MESSAGE value="no statistic" />
-    <option name="LAST_COMMIT_MESSAGE" value="no statistic" />
+    <MESSAGE value="button Play working" />
+    <option name="LAST_COMMIT_MESSAGE" value="button Play working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
